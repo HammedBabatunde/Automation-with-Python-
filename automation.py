@@ -1,0 +1,22 @@
+def automate(data):
+    import pyautogui
+    print(pyautogui.size())
+    print('The result is your screen resolution')
+    #pyautogui.moveTo(325,611); pyautogui.click()
+    pyautogui.press('enter')
+    pyautogui.typewrite('df = pd.read_csv(dataset)', interval=0.2)
+    pyautogui.press('enter')
+    pyautogui.typewrite('df.head()', interval=0.2)
+    pyautogui.hotkey('shift', 'enter')
+    pyautogui.press('down'); pyautogui.press('enter')
+    pyautogui.typewrite('From the head of data we can clearly identify **Attrition factor as the target/outcome variable** and rest of the factors are **predictor variables**', interval=0.01)
+    pyautogui.moveTo(544,194); pyautogui.click()
+    pyautogui.hotkey('down', 'enter'); pyautogui.moveTo(322, 612); pyautogui.click()
+    pyautogui.hotkey('shift', 'enter')
+    pyautogui.press('enter')
+    pyautogui.typewrite('#Lets look at no.of columns and information about its factors', interval=0.01)
+    pyautogui.press('enter')
+    pyautogui.typewrite('print ("The shape of the  data is (row, column):"+ str(df.shape))', interval=0.1); pyautogui.press('enter')
+    pyautogui.typewrite('print (df.info())', interval=0.1)
+    pyautogui.hotkey('shift', 'enter')
+    
